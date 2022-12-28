@@ -2,6 +2,7 @@ import requests
 import csv
 from bs4 import BeautifulSoup
 
+
 r = requests.get('https://www.marvel.com/v1/pagination/'
                  'grid_cards?offset=0&limit=2667&entityType=character&sortField=title&sortDirection=asc')
 data = r.json()
